@@ -14,6 +14,7 @@ This repository gives you a powerful, clean, and modular foundation to kickstart
 ✅ **Editable install mode** for reusable packages  
 ✅ **Notebook-friendly tools** with autoreload and `nbdime`  
 ✅ **Invoke** tasks for automation  
+✅ **Safe project root detection** using a `.here` marker file  
 ✅ Fully customizable and easy to extend
 
 ---
@@ -76,6 +77,10 @@ Then you're ready to go! 🎉
 │       └── visualization/ # Visual components
 │
 ├── scripts/               # Modular and reusable code
+├── src/                   # Source code and configs
+│   └── config/
+│       └── paths.py       # Project-wide path resolver
+│
 ├── tests/                 # Unit tests
 │
 ├── environment.yml        # Conda environment config
@@ -84,10 +89,24 @@ Then you're ready to go! 🎉
 ├── tasks.py               # Automation with Invoke
 ├── setup.py               # pip installable module
 ├── .gitignore             # Git tracking rules
-├── .here                  # Project root marker
+├── .here                  # Project root marker (used in paths.py)
 ├── LICENSE                # MIT License
 └── README.md              # This file 🧠
 ```
+
+---
+
+## 📂 Using Project Paths
+
+All scripts and notebooks can safely import the project root using:
+
+```python
+from src.config.paths import PROJECT_ROOT, DATA_DIR, NOTEBOOKS_DIR
+```
+
+The file `src/config/paths.py` automatically finds the project root by locating the `.here` file in the root directory, even when executed from subfolders or Jupyter notebooks.
+
+This ensures you never need to hardcode relative paths like `../../data/...`.
 
 ---
 
@@ -97,6 +116,7 @@ Then you're ready to go! 🎉
 - 🧪 **Test-ready** and automation-friendly  
 - 🔁 **Reusable modules** with editable installs  
 - 📊 **Jupyter-first** design with `autoreload` and `nbdime`  
+- 🧭 **Safe root detection** with `.here` and `pathlib`  
 - 🚀 **Perfect for teams or solo developers**
 
 ---
