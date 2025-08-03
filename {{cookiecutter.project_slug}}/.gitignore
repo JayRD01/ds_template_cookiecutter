@@ -1,37 +1,17 @@
-# --------------------------------------
-# 🐍 Python bytecode and compiled files
-# --------------------------------------
+# ----------------------------
+# 🐍 Python bytecode & caches
+# ----------------------------
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 
-# --------------------------------------
-# 📦 Distribution and packaging
-# --------------------------------------
-.Python
-*.egg
-*.egg-info/
-dist/
-build/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-develop-eggs/
-.installed.cfg
-*.manifest
-*.spec
-
-# --------------------------------------
-# 🧪 Testing and coverage
-# --------------------------------------
+# ----------------------------
+# 🧪 Testing & coverage
+# ----------------------------
 .coverage
 .coverage.*
-.cache
+.cache/
 .pytest_cache/
 nosetests.xml
 coverage.xml
@@ -40,15 +20,15 @@ coverage.xml
 .hypothesis/
 htmlcov/
 
-# --------------------------------------
+# ----------------------------
 # 📓 Jupyter notebooks
-# --------------------------------------
+# ----------------------------
 .ipynb_checkpoints/
 *.nbconvert.ipynb
 
-# --------------------------------------
+# ----------------------------
 # ⚙️ Virtual environments
-# --------------------------------------
+# ----------------------------
 .venv/
 venv/
 env/
@@ -56,38 +36,24 @@ ENV/
 env.bak/
 .python-version
 
-# --------------------------------------
-# 📁 Environment files
-# --------------------------------------
+# ----------------------------
+# 🔒 Environment & secrets
+# ----------------------------
 *.env
 .envrc
 .secret
 *.lock
 
-# --------------------------------------
-# 📦 Conda
-# --------------------------------------
-.conda/
-.mamba/
-
-# --------------------------------------
-# 🐳 Docker
-# --------------------------------------
-.dockerignore
-docker/
-Dockerfile
-docker-compose.yml
-
-# --------------------------------------
-# 💻 IDEs
-# --------------------------------------
+# ----------------------------
+# 💻 IDE/editor configs
+# ----------------------------
 .vscode/
 .idea/
 *.code-workspace
 
-# --------------------------------------
-# 📁 Data and models (never version real data)
-# --------------------------------------
+# ----------------------------
+# 📊 User-generated data
+# ----------------------------
 data/
 *.csv
 *.tsv
@@ -95,4 +61,41 @@ data/
 *.h5
 *.hdf5
 *.db
-*.sql*
+*.sqlite
+*.sql
+*.sav
+*.pkl
+*.joblib
+
+# ----------------------------
+# 🚀 Build & packaging
+# ----------------------------
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+dist/
+build/
+.eggs/
+develop-eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+.installed.cfg
+
+# ----------------------------
+# ⏱ Logs and temporary files
+# ----------------------------
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# 🔧 Cookiecutter temp files
+# ----------------------------
+year.txt
