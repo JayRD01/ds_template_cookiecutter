@@ -1,0 +1,27 @@
+# Core dependencies
+ipykernel
+jupyterlab
+notebook
+numpy
+pandas
+pyjanitor
+scipy
+matplotlib
+seaborn
+plotly
+scikit-learn
+xarray
+statsmodels
+sympy
+pytables
+ipywidgets
+
+# Pip-only dependencies
+pyprojroot
+pandas-flavor
+tqdm
+missingno
+sweetviz
+ydata-profiling
+loguru
+rich

@@ -9,7 +9,7 @@ This repository gives you a powerful, clean, and modular foundation to kickstart
 ## ✨ What You'll Find in This Template
 
 ✅ **Cookiecutter-ready** structure  
-✅ **Modern environment management** with `conda`  
+✅ **Modern environment management** with `conda`, `docker`, or `py_venv`  
 ✅ **Modular project layout** for scalability  
 ✅ **Editable install mode** for reusable packages  
 ✅ **Notebook-friendly tools** with autoreload and `nbdime`  
@@ -23,7 +23,7 @@ This repository gives you a powerful, clean, and modular foundation to kickstart
 ### 🔧 Requirements
 
 - Python ≥ 3.8  
-- Conda or Mamba  
+- Conda or Mamba (or Docker)  
 - Cookiecutter  
 - Git (recommended)
 
@@ -42,12 +42,21 @@ After generating the project:
 
 ```bash
 cd your_project_folder
+
+# If you chose conda
 conda env create -f environment.yml
 conda activate your_project_folder
+
+# If you chose py_venv
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+# Then (in any case)
 pip install --editable .
 ```
 
-Then you're ready to go!
+Then you're ready to go! 🎉
 
 ---
 
@@ -70,6 +79,7 @@ Then you're ready to go!
 ├── tests/                 # Unit tests
 │
 ├── environment.yml        # Conda environment config
+├── requirements.txt       # pip requirements (for py_venv)
 ├── install.md             # Full setup instructions
 ├── tasks.py               # Automation with Invoke
 ├── setup.py               # pip installable module
@@ -83,10 +93,10 @@ Then you're ready to go!
 
 ## 📌 Why Use This Template?
 
-- 🧼 **Well-structured** and production-focused
-- 🧪 **Test-ready** and automation-friendly
-- 🔁 **Reusable modules** with editable installs
-- 📊 **Jupyter-first** design with `autoreload` and `nbdime`
+- 🧼 **Well-structured** and production-focused  
+- 🧪 **Test-ready** and automation-friendly  
+- 🔁 **Reusable modules** with editable installs  
+- 📊 **Jupyter-first** design with `autoreload` and `nbdime`  
 - 🚀 **Perfect for teams or solo developers**
 
 ---

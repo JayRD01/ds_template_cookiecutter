@@ -1,0 +1,98 @@
+# --------------------------------------
+# 🐍 Python bytecode and compiled files
+# --------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --------------------------------------
+# 📦 Distribution and packaging
+# --------------------------------------
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+develop-eggs/
+.installed.cfg
+*.manifest
+*.spec
+
+# --------------------------------------
+# 🧪 Testing and coverage
+# --------------------------------------
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.tox/
+.hypothesis/
+htmlcov/
+
+# --------------------------------------
+# 📓 Jupyter notebooks
+# --------------------------------------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# --------------------------------------
+# ⚙️ Virtual environments
+# --------------------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+.python-version
+
+# --------------------------------------
+# 📁 Environment files
+# --------------------------------------
+*.env
+.envrc
+.secret
+*.lock
+
+# --------------------------------------
+# 📦 Conda
+# --------------------------------------
+.conda/
+.mamba/
+
+# --------------------------------------
+# 🐳 Docker
+# --------------------------------------
+.dockerignore
+docker/
+Dockerfile
+docker-compose.yml
+
+# --------------------------------------
+# 💻 IDEs
+# --------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# --------------------------------------
+# 📁 Data and models (never version real data)
+# --------------------------------------
+data/
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.db
+*.sql*
