@@ -1,5 +1,5 @@
-# Use an official Python image as base
-FROM python:3.11-slim
+# Use Python 3.12 to match conda env
+FROM python:3.12-slim
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -20,20 +20,33 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Upgrade pip and install Jupyter + core Python packages
+# Upgrade pip
 RUN pip install --no-cache-dir --upgrade pip
 
-# Install Python dependencies
+# Install Python packages
 RUN pip install --no-cache-dir \
     ipykernel \
     jupyterlab \
     notebook \
+    ipywidgets \
     numpy \
     pandas \
+    xarray \
     pyjanitor \
+    tables \
     scipy \
+    statsmodels \
+    sympy \
+    scikit-learn \
     matplotlib \
     seaborn \
     plotly \
-    scikit-learn \
-    xarray \
+    missingno \
+    pandas-flavor \
+    fs \
+    pyprojroot \
+    sweetviz \
+    ydata-profiling \
+    tqdm \
+    loguru \
+    rich
