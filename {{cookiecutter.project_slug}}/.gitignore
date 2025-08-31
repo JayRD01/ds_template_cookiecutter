@@ -54,7 +54,7 @@ env.bak/
 # ----------------------------
 # 📊 User-generated data
 # ----------------------------
-data/
+#data/
 *.csv
 *.tsv
 *.parquet
