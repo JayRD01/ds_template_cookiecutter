@@ -9,6 +9,7 @@ numpy
 pandas
 xarray
 pyjanitor
+ydata-profiling
 
 # pytables en pip
 tables

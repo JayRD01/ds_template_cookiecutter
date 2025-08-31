@@ -15,6 +15,7 @@ dependencies:
   - xarray
   - pyjanitor
   - pytables
+  - ydata-profiling
 
   # Math & stats
   - scipy
