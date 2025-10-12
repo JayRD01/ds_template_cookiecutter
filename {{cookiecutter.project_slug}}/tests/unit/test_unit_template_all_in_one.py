@@ -96,7 +96,8 @@ class TestLogic(unittest.TestCase):
 
     def test___sanitize_ids___none_input____returns_empty_list(self):
         self.assertEqual(sanitize_ids(None), [])
-
+    
+    #@unittest.skip('Building...')
     def test___sanitize_ids___non_integer_present____raises_type_error(self):
         with self.assertRaises(TypeError):
             sanitize_ids([1, "2", 3])

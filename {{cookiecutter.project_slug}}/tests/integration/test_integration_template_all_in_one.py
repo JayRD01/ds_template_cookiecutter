@@ -81,6 +81,7 @@ class TestIntegration(unittest.TestCase):
     # Entry point: process_file()
     # Purpose: verify return value + side effect (output file content)
     # ============================================================
+    
     def test___process_file___ignores_blank_and_whitespace_lines____writes_correct_count(self):
         # ARRANGE — build an isolated workspace with controlled input data
         with tempfile.TemporaryDirectory() as td:
